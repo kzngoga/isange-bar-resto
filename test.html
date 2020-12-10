@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Isange Bar-resto|At Your Service</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="img/logo.png"/>
+<style>
+*{
+padding: 0;
+margin: 0;
+font-family: arial;
+}
+
+.body{
+box-sizing: border-box;
+background: #f2f2f2;
+}
+
+.container{
+width: 100%;
+height: auto;
+background: #ccc;
+}
+
+.header{
+width: 100%;
+height: 70px;
+background: #000;
+}
+
+.logo{
+width: 200px;
+height: 70px;
+background: #f00;
+float: left;
+}
+
+.nav-lang{
+width: 1035px;
+height: 70px;
+background: #0f0;
+float: left;
+}
+
+.s-box{
+width: 350px;
+height: 70px;
+background: cyan;
+float: left;
+}
+
+.main-nav{
+width: 595px;
+height: 70px;
+background: #006666;
+float: left;
+}
+
+.lang{
+width: 90px;
+height: 70px;
+background: beige;
+float: left;
+}
+
+.main-content{
+width: 100%;
+height: 1730px;
+background: #ff0;
+padding-top: 1em;
+}
+
+.box-1{
+width: 1240px;
+height: 400px;
+background: #33ffcc;
+margin-left:0.8em;
+<!-- padding-top: 1.5em; -->
+}
+
+.box-2{
+width: 1240px;
+height: 400px;
+background: #33ffcc;
+margin-left:0.8em;
+margin-top: 1em;
+}
+
+.box-3{
+width: 1240px;
+height: 400px;
+background: #33ffcc;
+margin-left:0.8em;
+margin-top: 1em;
+}
+
+.box-4{
+width: 1240px;
+height: 400px;
+background: #33ffcc;
+margin-left:0.8em;
+margin-top: 1em;
+}
+
+.box-a{
+width: 280px;
+height: 360px;
+background: #f2f2f2;
+margin-left:2.3em;
+margin-top:1.3em;
+float: left;
+}
+
+.box-b{
+width: 280px;
+height: 360px;
+background: #00f;
+margin-left:1em;
+margin-top:1.3em;
+float: left;
+}
+
+.box-c{
+width: 280px;
+height: 360px;
+background: #00f;
+margin-left:1em;
+margin-top:1.3em;
+float: left;
+}
+
+.box-d{
+width: 280px;
+height: 360px;
+background: #00f;
+margin-left:1em;
+margin-top:1.3em;
+float: left;
+}
+
+
+.box-img{
+margin: 1em auto 1em 1em;
+box-shadow: 8px 6px 10px 0px rgba(128,128,128,0.8);
+transition: opacity 0.5s;
+}
+
+<!-- .box-img:hover{ -->
+<!-- opacity: 0.8; -->
+<!-- } -->
+
+.food-title{
+text-align: center;
+color: #e69500;
+text-transform: uppercase;
+font-size: 15px;
+}
+
+.par{
+margin-top: 0.8em;
+margin-bottom: 0.8em;
+line-height: 1.4;
+padding-left: 1em;
+}
+
+.head{
+font-weight: bold;
+<!-- margin-left: 1em; -->
+font-size: 16px;
+<!-- text-decoration: underline; -->
+}
+
+.text{
+font-size: 14px;
+margin-left: 1em;
+color: gray;
+}
+
+.fa-star{
+color: #ffff4d;
+font-size: 16px;
+}
+
+.desc{
+font-style: italic;
+line-height: 1;
+font-size: 13px;
+color: gray;
+margin-top: 0.2em;
+}
+
+a.btn{
+color: #fff;
+background: #e69500;
+padding: 8px 10px;
+text-decoration: none;
+box-shadow: 0px 0px 10px 0px rgba(128,128,128,0.8);
+font-weight: bold;
+margin-top: 12px;
+margin-left: 5em;
+transition: background 0.5s;
+}
+
+a.btn:hover{
+color: #e69500;
+background: #fff;
+}
+
+.footer{
+width: 100%;
+height: 80px;
+background:  rgba(0,0,0);
+}
+
+.copy{
+<!-- background: green; -->
+width: 500px;
+height: 30px;
+float: left;
+margin-left: 0.3em;
+padding-top: 0.3em;
+}
+
+.copy p{
+color: #fff;
+margin-left: 0.5em;
+}
+
+.copy a{
+color: gray;
+font-size: 14px;
+font-weight: bold;
+transition: opacity 0.3s;
+}
+
+.copy a:hover{
+opacity: 0.5;
+}
+
+.foot-nav{
+<!-- background: #ff450e; -->
+width: 500px;
+height: 30px;
+float: left;
+margin: 0 20em;
+}
+
+.foot-nav ul{
+list-style: none;
+margin-top: 0.5em;
+margin-left: 5em;
+}
+
+.foot-nav ul li{
+float: left;
+}
+
+.foot-nav ul li a{
+display: block;
+color: #fff;
+text-decoration: none;
+margin-right: 1em;
+font-size: 12px;
+border-bottom: 1px solid #e69500;
+transition: opacity 0.6s,border 0.6s;
+}
+
+.foot-nav ul li a:hover{
+opacity: 0.5;
+border: none;
+}
+
+.to-top{
+<!-- background: #3e350e; -->
+width: 100px;
+height: 30px;
+float: right;
+margin-top: 0.1em;
+
+}
+
+.fa-chevron-up{
+background:#e69500;
+color: #fff;
+padding: 5px 10px;
+font-size: 20px;
+transition: opacity 0.6s;
+margin-right: 1em;
+border-radius: 15px;
+}
+
+.fa-chevron-up:hover{
+opacity: 0.8;
+}
+
+.contact{
+<!-- background: #4e350e; -->
+width: 500px;
+height: 30px;
+float: left;
+margin: 0em 0 0 6em;
+<!-- padding-top: 0.3em; -->
+}
+
+.add{
+font-style: italic;
+color: #ccc;
+margin-left: 1em;
+margin-right: 0.5em;
+}
+
+.contact p{
+color: #e69500;
+<!-- margin-top: 1.5em; -->
+}
+
+
+.fa:hover{
+opacity: 0.8;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  text-decoration: none;
+  padding: 3px 6px;
+  margin-right: 0.3em;
+  border-radius: 3px;
+  transition: opacity 0.3s;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  text-decoration: none;
+  padding: 3px 6px;
+  margin-right: 0.3em;
+   border-radius: 3px;
+   transition: opacity 0.3s;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  text-decoration: none;
+  padding: 3px 6px;
+  margin-right: 0.3em;
+  border-radius: 3px;
+  transition: opacity 0.3s;
+}
+
+.foot-top{
+<!-- background: #6ff; -->
+width: 100%;
+height: 30px;
+}
+
+.foot-bottom{
+<!-- background: #f6f; -->
+width: 100%;
+height: 30px;
+margin-top: 1.25em;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+	    <div class="logo">
+		</div>	    
+		
+		<div class="nav-lang">
+		    <div class="s-box">
+			
+			</div>		    
+			
+			<div class="main-nav">
+
+			</div>			
+			
+			<div class="lang">
+			
+			</div>
+		</div>
+	</div>    
+	
+	<div class="main-content">
+	    <div class="box-1">
+		    <div class="box-a">
+			     <a href=""><img class="box-img" src="img/beef.jpg" width="250" height="120"></a>
+				    <h4 class="food-title">Chicken Biryani</h4>
+				<div class="par">
+					<p><span class="head">Price:</span> <span style="margin-left: 3.7em;" class="text">RWF 4500</span></p>
+					<p><span class="head">Tasted By:</span> <span class="text"><i class="fa fa-star"></i> <i href="#" class="fa fa-star"></i> <i href="#" class="fa fa-star"></i> <i href="#" class="fa fa-star"></i> <i href="#" style="color: #ccc;" class="fa fa-star"></i> <span style="margin-left: 0.5em; font-weight: bold; color:#e69500;">85%</span></span></p>
+					<p><span class="head">Cuisine:</span> <span style="margin-left: 2.5em;" class="text">Indian Cuisine</span></p>
+					<p><span class="head">Description:</span> <div class="desc">"Chicken Biryani is a plate prepared in the indian cuisine which mostly composed of chicken..."</div></p>
+				</div>
+				<a href="#" class="btn">View More</a>
+			</div>		    
+			
+			<div class="box-b">
+			</div>		    
+			
+			<div class="box-c">
+			</div>			
+			
+			<div class="box-d">
+			</div>
+		</div>	    
+		
+		<div class="box-2">
+			<div class="box-a">
+
+			</div>		    
+			
+			<div class="box-b">
+			</div>		    
+			
+			<div class="box-c">
+			</div>			
+			
+			<div class="box-d">
+			</div>
+		</div>	    
+		
+		<div class="box-3">
+			<div class="box-a">
+			
+			</div>		    
+			
+			<div class="box-b">
+			</div>		    
+			
+			<div class="box-c">
+			</div>			
+			
+			<div class="box-d">
+			</div>
+		</div>		
+		
+		<div class="box-4">
+			<div class="box-a">
+			
+			</div>		    
+			
+			<div class="box-b">
+			</div>		    
+			
+			<div class="box-c">
+			</div>			
+			
+			<div class="box-d">
+			</div>
+		</div>
+	</div>    
+	
+	<div class="footer">
+	<div class="foot-top">
+	    <div class="copy">
+	        <p>&copy;&nbsp;Isange bar-resto-All rights Reserved, Developed By <a href="">KZTECH INC.</a></p> 
+	    </div>	
+		
+	    <div class="contact">
+	        <p><span class="add">Located in Kigali,Rwanda</span>- Follow us On. <a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-instagram"></a></p>
+	    </div>
+		
+	    <div class="to-top">
+	        <a href="#top"><i class="fa fa-chevron-up"></i></a>
+	    </div>
+    </div>
+	
+	<div class="foot-bottom">
+	    <div class="foot-nav">
+	        <ul>
+		        <li><a href="#">PRIVACY POLICY</a></li>
+		        <li><a href="#">FAQs</a></li>
+		        <li><a href="#">FEEDBACK</a></li>
+		        <li><a href="#">CONTACT US</a></li>
+		    </ul>
+	    </div>	
+	</div>
+</div>
+</body>
+</html>

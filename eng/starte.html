@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Isange Bar-resto|At Your Service</title>
+<link rel="icon" href="../img/logo.png"/>
+<!-- <link rel="stylesheet" type="text/css" href="../css/style.css"/> -->
+<link href="https://fonts.googleapis.com/css?family=Ceviche+One|Chau+Philomene+One|Creepster|Eater|Frijole|Germania+One|IM+Fell+English+SC|Lobster|Markazi+Text|Oleo+Script|Patua+One|Rye" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+*{
+padding: 0;
+margin: 0;
+}
+
+body{
+background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/waiter.jpg) no-repeat;
+background-size: cover;
+font-family: arial;
+}
+
+.container{
+width:100%;
+height: auto;
+<!-- border: 1px solid #000; -->
+}
+
+.header{
+width: 100%;
+height: 90px;
+background: transparent;
+}
+
+.logo{
+width: 220px;
+height: 70px;
+background: transparent;
+float: left;
+border-bottom: 3px solid #fff;
+border-radius: 0px 0px 50px 0px;
+animation: turn 5s 1s 1;
+position: relative;
+}
+
+
+@keyframes turn{
+0%{
+top: 0px;
+left: 0px;
+}
+
+25%{
+left: 0px;
+top: 32px;
+}
+
+50%{
+left: 930px;
+top: 32px;
+}
+
+75%{
+left: 930px;
+top: 0px;
+}
+
+100%{
+top: 0px;
+left: 0px;
+}
+}
+
+.logo h1{
+font-family: 'Creepster', cursive;
+color: #fff;
+float: left;
+font-size: 52px;
+margin-left: 0.3em;
+text-shadow: 2px 2px 6px black;
+}
+
+.logo h3{
+font-family: Curlz MT;
+color:  #ffc299;
+float: left;
+margin-top: 2em;
+transform: rotate(-30deg);
+font-size: 15px;
+}
+
+.lang{
+float: right;
+width: 120px;
+height: 82px;
+background: transparent;
+margin-top: 0.5em;
+}
+
+.lang ul li{
+list-style: none;
+}
+
+.lang ul li{
+float: left;
+position: relative;
+margin-right: 0.5em;
+}
+
+.lang ul li a{
+display: block;
+color: white;
+padding: 5px 8px;
+text-decoration: none;
+transition: border 0.5s;
+}
+
+.lang ul li.active a{
+border: 1px solid #fff;
+}
+
+.lang ul li a:hover{
+border: 1px solid #fff;
+}
+
+.welcome{
+width: 80%;
+height: 490px;
+background: transparent;
+margin: 1em auto 2em auto;
+border: 1px solid #fff;
+box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.welcome h1{
+color: #e69500;
+text-align: center;
+text-transform: uppercase;
+font-size: 40px;
+margin-top: 1em;
+font-family: 'Germania One', cursive;
+opacity: 0.8;
+}
+
+.par p{
+color: #fff;
+padding-left: 1em;
+display: block;
+line-height: ;
+text-transform: capitalize;
+font-size: 18px;
+height: 220px;
+margin-top: 5em;
+<!-- border: 1px solid #000; -->
+}
+
+
+.first{
+font-size: 90px;
+font-weight: bold;
+font-style: italic;
+font-family: Juice ITC;
+}
+
+.welcome a{
+display: block;
+color: white;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 18px;
+background: #e69500;
+width: 300px;
+text-align: center;
+padding: 15px 0px;
+border-radius: 8px;
+position: relative;
+left: 290px;
+transition: opacity 0.5s;
+}
+
+.welcome a:hover{
+opacity: 0.7;
+}
+
+.foot{
+margin-top: 3.5em;
+background: transparent;
+width: 100%;
+height: 60px;
+}
+
+.copy{
+background: transparent;
+width: 500px;
+height: 60px;
+float: left;
+}
+
+.copy p{
+color: #fff;
+margin-left: 0.5em;
+margin-top: 1.6em;
+}
+
+.copy a{
+color: gray;
+font-size: 14px;
+font-weight: bold;
+transition: opacity 0.3s;
+}
+
+.copy a:hover{
+opacity: 0.5;
+}
+
+.contact{
+background: transparent;
+width: 763px;
+height: 60px;
+float: right;
+}
+
+.add{
+font-style: italic;
+color: #ccc;
+margin-left: 3em;
+margin-right: 0.5em;
+}
+
+.contact p{
+color: #e69500;
+margin-top: 1.5em;
+}
+
+
+.fa:hover{
+opacity: 0.8;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  text-decoration: none;
+  padding: 3px 6px;
+  margin-right: 0.3em;
+  border-radius: 3px;
+  transition: opacity 0.3s;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  text-decoration: none;
+  padding: 3px 6px;
+  margin-right: 0.3em;
+   border-radius: 3px;
+   transition: opacity 0.3s;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  text-decoration: none;
+  padding: 3px 6px;
+  margin-right: 0.3em;
+  border-radius: 3px;
+  transition: opacity 0.3s;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+	    <div class="logo">
+		    <h1>Isange</h1>
+	        <h3>Bar-Resto</h3>
+		</div>
+		<div class="lang">
+			<ul>
+		        <li class="active"><a href="#">EN</a></li>
+		        <li><a href="../kiny/startk.html">RW</a></li>
+		    </ul>
+		</div>
+	</div>
+	
+	<div class="welcome">
+	    <h1>Welcome to "isange bar-resto"</h1>
+		<div class="par">
+		    <p> <span class="first">w</span>e offer good quality food,beverages prepared by well-trained chefs and qualified cookers and served in different cuisine cultures (African,Chinese,Italian...).&nbsp;come and enjoy the best coffee in kigali within the greatest atmosphere all around here.</p>
+		</div>
+		<a href="home.html">Get Started</a>
+	</div>
+	
+	<div class="foot">
+	    <div class="copy">
+		    <p>&copy;&nbsp;Isange bar-resto-All rights Reserved, Developed By <a href="">KZTECH INC.</a></p> 
+		</div>
+		<div class="contact">
+		    <p><span class="add">Kigali,Rwanda</span>- Call us on +250784567890/+250734567890,&nbsp;Follow us On. <a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-instagram"></a></p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
